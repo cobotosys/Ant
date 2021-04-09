@@ -1,0 +1,10 @@
+*~
+build/
+.idea/
+.vscode/
+install/
+cobotsys_sdk_package/
+cobotsys_sdk_temp/
+../.directory
+**/cmake-build-release
+**/cmake-build-debug
