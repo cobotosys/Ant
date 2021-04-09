@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<WorkCell name="UR3" xmlns="">
+
+  <CollisionSetup>
+    <FramePair first="Camera" second="WorkBench"/>
+    <FramePair first="grasper" second="WorkBench"/>
+    <FramePair first="grasper" second="UR3.Joint5"/>
+    <FramePair first="UR3.TCP" second="UR3.Joint5"/>
+    <FramePair first="UR3.Joint5" second="UR3.Joint4"/>
+    <FramePair first="UR3.Joint4" second="UR3.Joint3"/>
+    <FramePair first="UR3.Joint3" second="UR3.Joint2"/>
+    <FramePair first="UR3.Joint2" second="UR3.Joint1"/>
+    <FramePair first="UR3.Joint1" second="UR3.Joint0"/>
+    <FramePair first="UR3.Joint0" second="UR3.Base"/>
+    <FramePair first="UR3.Base" second="WORLD"/>
+    <FramePair first="WorkBench" second="UR3.Base"/>
+    <FramePair first="WorkBench" second="board1"/>
+    <FramePair first="board2" second="board4"/>
+    <FramePair first="board2" second="board3"/>
+    <FramePair first="board4" second="board1"/>
+    <FramePair first="board3" second="board1"/>
+    <FramePair first="board4" second="board3"/>
+    <FramePair first="board1" second="board2"/>
+  </CollisionSetup>
+
+  <Frame name="Camera" refframe="WORLD" type="MovableFrame">
+    <RPY>-89.460165 3.059881 -179.819712</RPY>
+    <Pos>-0.455874 0.208567 0.941606</Pos>
+    <Drawable name="Drawable_16235234" refframe="Camera">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>-0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Camera/IM/geometry/COMATRIX-IM.STL"/>
+    </Drawable>
+    <Property des="设备客户端名称" name="ApiKey" type="2">ComatrixCameraClient</Property>
+    <Property des="设备API类型" name="ApiType" type="2">Camera3D</Property>
+    <Property des="相机Blue" name="Blue" type="5">25</Property>
+    <Property des="2" name="FrameAxisVisible" type="2">true</Property>
+    <Property des="相机Gain" name="GainRaw" type="5">140</Property>
+    <Property des="相机Green" name="Green" type="5">25</Property>
+    <Property des="相机ID" name="ID" type="2">COMD0511024</Property>
+    <Property des="相机Red" name="Red" type="5">25</Property>
+  </Frame>
+
+  <Frame name="board4" refframe="UR3.Base" type="MovableFrame">
+    <RPY>-138.953156 89.899896 -49.292045</RPY>
+    <Pos>0.189088 -0.413455 0.462243</Pos>
+    <Drawable name="Drawable_2179686" refframe="board4">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board3" refframe="UR3.Base" type="MovableFrame">
+    <RPY>-138.953156 89.899896 -49.292045</RPY>
+    <Pos>0.184426 0.374481 0.461345</Pos>
+    <Drawable name="Drawable_15670114" refframe="board3">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board2" refframe="UR3.Base" type="MovableFrame">
+    <RPY>-138.953156 89.899896 40.707955</RPY>
+    <Pos>-0.248347 -0.003085 0.462349</Pos>
+    <Drawable name="Drawable_13072312" refframe="board2">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board1" refframe="UR3.Base" type="MovableFrame">
+    <RPY>-179.661154 -0.075883 0.065288</RPY>
+    <Pos>0.231011 -0.000797 -0.018286</Pos>
+    <Drawable name="Drawable_6923544" refframe="board1">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="camera_calibrate_frame" refframe="UR3.Base" type="MovableFrame">
+    <RPY>89.800000 0.426000 -179.719000</RPY>
+    <Pos>0.269000 0.001500 0.931870</Pos>
+    <Property des="2" name="FrameAxisVisible" type="2">true</Property>
+  </Frame>
+
+  <Frame name="grasper" refframe="UR3.TCP" type="MovableFrame">
+    <RPY>-45.091252 -0.000000 0.000000</RPY>
+    <Pos>-0.000497 0.001651 0.158250</Pos>
+    <Drawable name="Drawable_162352111" refframe="grasper">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/toolMount.STL"/>
+    </Drawable>
+    <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+    <Property name="String" type="2">url</Property>
+    <Property name="Tool" type="2">true</Property>
+    <Property name="url" type="2">/dev/ttyUSB0</Property>
+  </Frame>
+
+  <Frame name="graspFrame" refframe="UR3.TCP" type="MovableFrame">
+    <RPY>-45.091252 -0.000000 0.000000</RPY>
+    <Pos>0.000000 -0.000000 0.156250</Pos>
+    <Property des="2" name="FrameAxisVisible" type="2">true</Property>
+  </Frame>
+
+  <Frame name="WorkBench" refframe="WORLD" type="MovableFrame">
+    <RPY>-179.255000 -0.091378 -2.634220</RPY>
+    <Pos>-0.188958 0.256368 0.010362</Pos>
+    <Drawable name="Drawable_2273147" refframe="WorkBench">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/workbench.STL"/>
+    </Drawable>
+    <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+  </Frame>
+
+  <SerialDevice name="UR3">
+    <Q name="HOME">3.252740 -2.173720 2.044480 -1.410330 -1.642860 0.123342</Q>
+    <CollisionSetup/>
+    <Frame name="UR3.Base" refframe="WORLD" type="MovableFrame">
+      <RPY>-179.255000 -0.091378 -2.634220</RPY>
+      <Pos>-0.188958 0.256368 0.010362</Pos>
+      <Drawable name="base" refframe="UR3.Base">
+        <RGB>235.000000 235.000000 235.000000 1.000000</RGB>
+        <RPY>0.000000 0.000000 0.000000</RPY>
+        <Pos>0.000000 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31220-STEP-1.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">true</Property>
+    </Frame>
+    <Frame name="UR3.TCP" refframe="UR3.Joint5" type="FixedFrame">
+      <RPY>-0.004896 -0.000000 0.000000</RPY>
+      <Pos>0.000000 -0.000000 0.082284</Pos>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+    </Frame>
+    <Joint a="0.000000" alpha="0.000000" b="0.000000" beta="0.000000" d="0.000000" hgptype="" jointType="Revolute" name="UR3.Joint0" offset="0.000000" refframe="UR3.Base" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="shoulder" refframe="UR3.Joint0">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>0.000000 0.000000 0.000000</RPY>
+        <Pos>0.000000 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31602-STEP-1.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="360.000000" min="-360.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Joint a="0.000000" alpha="90.000000" b="0.000000" beta="0.000000" d="0.151900" hgptype="" jointType="Revolute" name="UR3.Joint1" offset="0.000000" refframe="UR3.Joint0" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="upperarm_1" refframe="UR3.Joint1">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.151900 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31602-STEP-2.stl"/>
+      </Drawable>
+      <Drawable name="upperarm_2" refframe="UR3.Joint1">
+        <RGB>215.000000 215.000000 215.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.151900 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31126-STEP-1.stl"/>
+      </Drawable>
+      <Drawable name="upperarm_3" refframe="UR3.Joint1">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.151900 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31601-STEP-1.stl"/>
+      </Drawable>
+      <Drawable name="upperarm_4" refframe="UR3.Joint1">
+        <RGB>125.000000 210.000000 255.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.151900 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 34111-STEP-1.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="360.000000" min="-360.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Joint a="-0.243650" alpha="0.000000" b="0.000000" beta="0.000000" d="0.000000" hgptype="" jointType="Revolute" name="UR3.Joint2" offset="0.000000" refframe="UR3.Joint1" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="forearm_1" refframe="UR3.Joint2">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.395550 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31690-STEP-1.stl"/>
+      </Drawable>
+      <Drawable name="forearm_2" refframe="UR3.Joint2">
+        <RGB>215.000000 215.000000 215.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.395550 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31116-STEP-1.stl"/>
+      </Drawable>
+      <Drawable name="forearm_3" refframe="UR3.Joint2">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.395550 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31600-STEP-1.stl"/>
+      </Drawable>
+      <Drawable name="forearm_4" refframe="UR3.Joint2">
+        <RGB>125.000000 210.000000 255.000000 1.000000</RGB>
+        <RPY>90.000000 0.000000 -90.000000</RPY>
+        <Pos>0.395550 0.000000 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 34011-STEP-2.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="360.000000" min="-360.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Joint a="-0.213250" alpha="0.000000" b="0.000000" beta="0.000000" d="0.000000" hgptype="" jointType="Revolute" name="UR3.Joint3" offset="0.000000" refframe="UR3.Joint2" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="wrist1_1" refframe="UR3.Joint3">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>180.000000 0.000000 -90.000000</RPY>
+        <Pos>0.000000 0.608550 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31600-STEP-2.stl"/>
+      </Drawable>
+      <Drawable name="wrist1_2" refframe="UR3.Joint3">
+        <RGB>125.000000 210.000000 255.000000 1.000000</RGB>
+        <RPY>180.000000 0.000000 -90.000000</RPY>
+        <Pos>0.000000 0.608550 0.000000</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 34011-STEP-3.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="360.000000" min="-360.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Joint a="0.000000" alpha="90.000000" b="0.000000" beta="0.000000" d="0.112350" hgptype="" jointType="Revolute" name="UR3.Joint4" offset="0.000000" refframe="UR3.Joint3" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="wrist2_1" refframe="UR3.Joint4">
+        <RGB>155.000000 155.000000 155.000000 1.000000</RGB>
+        <RPY>180.000000 0.000000 0.000000</RPY>
+        <Pos>0.000000 -0.110400 -0.608550</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31600-STEP-3.stl"/>
+      </Drawable>
+      <Drawable name="wrist2_2" refframe="UR3.Joint4">
+        <RGB>125.000000 210.000000 255.000000 1.000000</RGB>
+        <RPY>180.000000 0.000000 0.000000</RPY>
+        <Pos>0.000000 -0.110400 -0.608550</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 34011-STEP-1.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="360.000000" min="-360.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Joint a="0.000000" alpha="-90.000000" b="0.000000" beta="0.000000" d="0.085350" hgptype="" jointType="Revolute" name="UR3.Joint5" offset="0.000000" refframe="UR3.Joint4" state="Active" theta="0.000000" type="schilling">
+      <Drawable name="wrist3" refframe="UR3.Joint5">
+        <RGB>215.000000 215.000000 215.000000 1.000000</RGB>
+        <RPY>180.000000 0.000000 -90.000000</RPY>
+        <Pos>0.000000 0.691950 -0.110400</Pos>
+        <Polytope file="$SDK_PATH/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/geometry/UR3 - 31000-STEP-1.stl"/>
+      </Drawable>
+      <Property des="2" name="FrameAxisVisible" type="2">false</Property>
+      <PosLimit max="720.000000" min="-720.000000"/>
+      <VelLimit max="60.000000"/>
+      <AccLimit max="120.000000"/>
+    </Joint>
+    <Property name="ApiKey" type="2">UrRobotDriver</Property>
+    <Property name="ApiType" type="2">Robot</Property>
+    <Property name="IP" type="2">192.168.1.2</Property>
+    <Property name="devicelibrary::RobotInfo" type="RTTR::RobotInfo">{
+    "title": "UR3",
+    "base64Img": "/install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/UR3.png",
+    "localFilePath": "install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/Robot/UR/UR3/UR3.xml",
+    "brand": "Universal Robots",
+    "description": "UR机器人本体，控制器，线缆等",
+    "type": "6 DOF",
+    "axes": 6,
+    "name": "工业机器人",
+    "html": "install/x86-64-install/devel/data/Cow.CobotStudio.Plugins/DeviceHTML/UR3.html",
+    "payload": 3.0,
+    "reach": 500.0,
+    "repeat": 0.1,
+    "weight": 11.0,
+    "showDrager": true
+}</Property>
+    <Property des="2" name="robotName" type="2">UR3</Property>
+  </SerialDevice>
+
+</WorkCell>
