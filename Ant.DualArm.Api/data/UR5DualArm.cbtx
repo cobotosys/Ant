@@ -102,7 +102,6 @@
       <Pos>0.000000 0.000000 0.000000</Pos>
       <Polytope file="geos/WorkStation/table.stl"/>
     </Drawable>
-    <Property name="FrameAxisVisible" type="2">true</Property>
   </Frame>
 
   <Frame name="board4" refframe="WorkStation" type="MovableFrame">
@@ -166,7 +165,6 @@
       <Pos>0.000000 0.000000 0.000000</Pos>
       <Polytope file="geos/board.stl"/>
     </Drawable>
-    <Property name="FrameAxisVisible" type="2">true</Property>
     <Property name="Opacity" type="4">0.000000</Property>
   </Frame>
 
@@ -179,7 +177,6 @@
       <Pos>0.000000 0.000000 0.000000</Pos>
       <Polytope file="geos/board.stl"/>
     </Drawable>
-    <Property name="FrameAxisVisible" type="2">true</Property>
     <Property name="Opacity" type="4">0.000000</Property>
   </Frame>
 
@@ -192,7 +189,6 @@
       <Pos>0.000000 0.000000 0.000000</Pos>
       <Polytope file="geos/board.stl"/>
     </Drawable>
-    <Property name="FrameAxisVisible" type="2">true</Property>
     <Property name="Opacity" type="4">0.000000</Property>
   </Frame>
 
