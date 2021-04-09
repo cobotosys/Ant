@@ -55,7 +55,7 @@ void move(DualArmRobotScene &robot, rw::math::Transform3D<> t, rw::math::Q leftQ
             auto newT = rw::kinematics::Kinematics::frameTframe(robot._planner->_rightArmRobot->getEnd(),
                                                                 robot._planner->_leftArmRobot->getEnd(),
                                                                 robot._planner->_state) * origT;
-            return newT.equal(rw::math::Transform3D<>::identity(), 0.05);
+            return newT.equal(rw::math::Transform3D<>::identity(), 0.04);
         }
 //        return true;
     };

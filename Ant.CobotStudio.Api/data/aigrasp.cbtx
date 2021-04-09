@@ -49,7 +49,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+      <Polytope file="geo/board.stl"/>
     </Drawable>
     <Property name="FrameAxisVisible" type="2">false</Property>
     <Property name="Opacity" type="4">0.000000</Property>
@@ -62,7 +62,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+      <Polytope file="geo/board.stl"/>
     </Drawable>
     <Property name="FrameAxisVisible" type="2">false</Property>
     <Property name="Opacity" type="4">0.000000</Property>
@@ -75,7 +75,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+      <Polytope file="geo/board.stl"/>
     </Drawable>
     <Property name="FrameAxisVisible" type="2">false</Property>
     <Property name="Opacity" type="4">0.000000</Property>
@@ -88,7 +88,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/board.stl"/>
+      <Polytope file="geo/board.stl"/>
     </Drawable>
     <Property name="FrameAxisVisible" type="2">false</Property>
     <Property name="Opacity" type="4">0.000000</Property>
@@ -107,7 +107,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/toolMount.STL"/>
+      <Polytope file="geo/toolMount.STL"/>
     </Drawable>
     <Property des="2" name="FrameAxisVisible" type="2">false</Property>
     <Property name="String" type="2">url</Property>
@@ -128,7 +128,7 @@
       <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
       <RPY>0.000000 -0.000000 0.000000</RPY>
       <Pos>0.000000 0.000000 0.000000</Pos>
-      <Polytope file="$SDK_PATH/Ant/Ant.CobotStudio.Api/data/geo/workbench.STL"/>
+      <Polytope file="geo/workbench.STL"/>
     </Drawable>
     <Property des="2" name="FrameAxisVisible" type="2">false</Property>
   </Frame>

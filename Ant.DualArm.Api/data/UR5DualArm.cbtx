@@ -22,7 +22,40 @@
     <FramePair first="RightTool" second="Right_Arm.Joint5"/>
     <FramePair first="WorkStation" second="Right_Arm.Base"/>
     <FramePair first="WorkStation" second="Left_Arm.Base"/>
+    <FramePair first="board4" second="board3"/>
+    <FramePair first="board4" second="board2"/>
+    <FramePair first="board4" second="board1"/>
+    <FramePair first="board4" second="board5"/>
+    <FramePair first="board4" second="board6"/>
+    <FramePair first="board4" second="board7"/>
+    <FramePair first="board3" second="board7"/>
+    <FramePair first="board3" second="board6"/>
+    <FramePair first="board3" second="board5"/>
+    <FramePair first="board3" second="board1"/>
+    <FramePair first="board7" second="board6"/>
+    <FramePair first="board6" second="board5"/>
+    <FramePair first="board7" second="board5"/>
+    <FramePair first="board7" second="board1"/>
+    <FramePair first="board6" second="board1"/>
+    <FramePair first="board5" second="board1"/>
+    <FramePair first="board6" second="board2"/>
+    <FramePair first="board7" second="board2"/>
+    <FramePair first="board5" second="board2"/>
+    <FramePair first="board4" second="WorkStation"/>
+    <FramePair first="board3" second="WorkStation"/>
+    <FramePair first="board2" second="WorkStation"/>
+    <FramePair first="board1" second="WorkStation"/>
+    <FramePair first="board5" second="WorkStation"/>
+    <FramePair first="board6" second="WorkStation"/>
+    <FramePair first="board7" second="WorkStation"/>
+    <FramePair first="board2" second="board3"/>
   </CollisionSetup>
+
+  <Frame name="LeftToolMount" refframe="Left_Arm.TCP" type="MovableFrame">
+    <RPY>0.000000 -0.000000 0.000000</RPY>
+    <Pos>0.002000 -0.001000 0.183000</Pos>
+    <Property name="FrameAxisVisible" type="2">true</Property>
+  </Frame>
 
   <Frame name="LeftTool" refframe="Left_Arm.TCP" type="MovableFrame">
     <RPY>0.000000 -0.000000 -90.000000</RPY>
@@ -34,12 +67,6 @@
       <Polytope file="geos/c3_tool.STL"/>
     </Drawable>
     <Property name="FrameAxisVisible" type="2">false</Property>
-  </Frame>
-
-  <Frame name="LeftToolMount" refframe="Left_Arm.TCP" type="MovableFrame">
-    <RPY>0.000000 -0.000000 0.000000</RPY>
-    <Pos>0.002000 -0.001000 0.183000</Pos>
-    <Property name="FrameAxisVisible" type="2">true</Property>
   </Frame>
 
   <Frame name="RightTool" refframe="Right_Arm.TCP" type="MovableFrame">
@@ -60,6 +87,12 @@
     <Property name="FrameAxisVisible" type="2">true</Property>
   </Frame>
 
+  <Frame name="LeftPose" refframe="WORLD" type="MovableFrame">
+    <RPY>0.000000 -0.000000 -180.000000</RPY>
+    <Pos>0.000000 0.000000 0.040000</Pos>
+    <Property name="FrameAxisVisible" type="2">true</Property>
+  </Frame>
+
   <Frame name="WorkStation" refframe="WORLD" type="MovableFrame">
     <RPY>0.000000 -0.000000 0.000000</RPY>
     <Pos>0.000000 0.000000 0.000000</Pos>
@@ -72,14 +105,99 @@
     <Property name="FrameAxisVisible" type="2">true</Property>
   </Frame>
 
-  <Frame name="LeftPose" refframe="WORLD" type="MovableFrame">
-    <RPY>0.000000 -0.000000 -180.000000</RPY>
-    <Pos>0.000000 0.000000 0.040000</Pos>
+  <Frame name="board4" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 90.000000</RPY>
+    <Pos>-0.002500 0.797500 0.497500</Pos>
+    <Drawable name="Drawable_7361051" refframe="board4">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board3" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 90.000000</RPY>
+    <Pos>-0.002500 -0.790000 0.497500</Pos>
+    <Drawable name="Drawable_15942092" refframe="board3">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board2" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 0.000000</RPY>
+    <Pos>-0.452500 -0.347500 0.497500</Pos>
+    <Drawable name="Drawable_578155" refframe="board2">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board1" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 0.000000</RPY>
+    <Pos>0.440000 -0.347500 0.497500</Pos>
+    <Drawable name="Drawable_5320220" refframe="board1">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">false</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board5" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 -0.000000 0.000000</RPY>
+    <Pos>0.000000 0.000000 0.835000</Pos>
+    <Drawable name="Drawable_13771468" refframe="board5">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
     <Property name="FrameAxisVisible" type="2">true</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board6" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 0.000000</RPY>
+    <Pos>0.440000 0.352500 0.497500</Pos>
+    <Drawable name="Drawable_15771839" refframe="board6">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">true</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
+  </Frame>
+
+  <Frame name="board7" refframe="WorkStation" type="MovableFrame">
+    <RPY>0.000000 90.000000 0.000000</RPY>
+    <Pos>-0.455000 0.352500 0.497500</Pos>
+    <Drawable name="Drawable_6923544" refframe="board7">
+      <RGB>255.000000 255.000000 255.000000 1.000000</RGB>
+      <RPY>0.000000 -0.000000 0.000000</RPY>
+      <Pos>0.000000 0.000000 0.000000</Pos>
+      <Polytope file="geos/board.stl"/>
+    </Drawable>
+    <Property name="FrameAxisVisible" type="2">true</Property>
+    <Property name="Opacity" type="4">0.000000</Property>
   </Frame>
 
   <SerialDevice name="Left_Arm">
-    <Q name="HOME">-1.570000 -1.570000 0.000000 -1.570000 0.000000 0.000000</Q>
+    <Q name="HOME">-1.53938  -1.12155  -2.3719  -1.42314 1.27235 -1.32575</Q>
     <CollisionSetup/>
     <Frame name="Left_Arm.Base" refframe="WORLD" type="MovableFrame">
       <RPY>90.000000 -0.000000 0.000000</RPY>
@@ -249,7 +367,7 @@
   </SerialDevice>
 
   <SerialDevice name="Right_Arm">
-    <Q name="HOME">-1.570000 -1.570000 0.000000 -1.570000 0.000000 0.000000</Q>
+    <Q name="HOME">-1.53938  -1.12155  -2.3719  -1.42314 1.27235 -1.32575</Q>
     <CollisionSetup/>
     <Frame name="Right_Arm.Base" refframe="WORLD" type="MovableFrame">
       <RPY>-90.000000 -0.000000 0.000000</RPY>
